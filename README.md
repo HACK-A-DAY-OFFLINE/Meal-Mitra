@@ -1,70 +1,121 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🍽️ MealMitra – AI Based Food & Farmer Produce Donation System
+A real-time platform connecting donors, NGOs, volunteers, and farmers to prevent food & crop wastage.
+🚀 Overview
 
-## Available Scripts
+MealMitra is a smart platform designed to reduce food waste by connecting:
 
-In the project directory, you can run:
+🍱 Food Donors (hostels, restaurants, events, canteens)
 
-### `npm start`
+🙌 NGOs & Volunteers
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🌾 Farmers with surplus crops
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🏫 Community kitchens & beneficiaries
 
-### `npm test`
+The system uses:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+AI for food quantity estimation
 
-### `npm run build`
+Google Maps API for real-time tracking
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Firebase for authentication + data storage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Firestore for real-time updates
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+⭐ New Feature: Farmer Surplus Crop Interface (Added to the App)
 
-### `npm run eject`
+MealMitra now includes a dedicated Farmer Upload Interface where farmers can post unsold, excess, or low-value crops instead of throwing them away.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+✔ Why this matters:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Helps farmers reduce losses during price crashes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ensures fresh vegetables reach NGOs & community kitchens
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Eliminates farm-level waste
 
-## Learn More
+Expands the impact of the platform beyond cooked food
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+⭐ What Farmers Can Upload:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Surplus vegetables
 
-### Code Splitting
+Fruits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Grains harvested in excess
 
-### Analyzing the Bundle Size
+Produce that cannot be sold due to low market price
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🛠 How it works (Farmer Flow):
 
-### Making a Progressive Web App
+Farmer opens “Farmer Surplus Upload” page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Enters crop type, quantity, location
 
-### Advanced Configuration
+Posts the surplus produce
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Nearest NGO or community kitchen receives request
 
-### Deployment
+Pickup & delivery are tracked in real-time
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This appears as a new interface/page inside the MealMitra app.
 
-### `npm run build` fails to minify
+✨ Core Features
+🍽️ Food Donor Module
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Upload leftover food
+
+AI estimates servings
+
+Add pickup timings
+
+Track donation status
+
+Auto-matching with nearest NGO
+
+🙌 NGO / Volunteer Module
+
+View available food & crop posts
+
+Accept requests
+
+Live navigation (Google Maps)
+
+Mark actions: Accepted → Picked Up → Delivered
+
+🌾 Farmer Surplus Crop Interface (NEW)
+
+Upload unsold vegetables/crops
+
+Add images, quantity, freshness notes
+
+Auto-assign to nearby NGOs
+
+Enables community kitchens to serve fresh meals
+
+🗺️ Real-Time Map
+
+Shows active NGOs nearby
+
+Tracks volunteer from pickup → delivery
+
+Uses Google Maps API
+
+📡 Real-Time Matching Engine
+
+Finds NGO/volunteer within set distance
+
+First accept → task assigned
+
+Firestore triggers update all screens live
+
+🧠 Technology Stack
+Layer	Tech
+Frontend	React.js, Tailwind CSS
+Backend	Firebase Firestore
+Auth	Firebase Authentication
+Storage	Firebase Storage
+AI	TensorFlow Lite / Mock AI
+Maps	Google Maps API
+Deployment	Vercel + Firebase
